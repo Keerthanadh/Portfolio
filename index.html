@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <title>Keerthana D Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo" data-aos="zoom-in">Keerthana <span>D</span></div>
+      <div class="links">
+        <div class="link"><a href="index.html">Home</a></div>
+        <div class="link"><a href="about.html">About</a></div>
+        <div class="link"><a href="skills.html">Skills</a></div>
+        <div class="link"><a href="project.html">Projects</a></div>
+        <div class="link"><a href="certifications.html">Certifications</a></div>
+        <div class="link"><a href="contact.html">Contacts</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="skills.html">Skills</a>
+        <a href="project.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contacts</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="main-container">
+      <div class="image" data-aos="zoom-out">
+        <img src="images/Keerthana.jpeg" alt="Keerthana D" />
+      </div>
+      <div class="content">
+        <h1 data-aos="fade-left">Hey I'm <span>Keerthana D</span></h1>
+        <h2 class="subtitle">Electrical CAD Designer at AVBT</h2>
+        <div class="typewriter" data-aos="fade-right">
+          I'm <span class="typewriter-text"></span><label>|</label>
+        </div>
+        <p data-aos="flip-down">
+          I’m a B.Tech IT graduate and an Electrical CAD Designer and Automation Engineer 
+          with a background in Information Technology. 
+          I have hands-on experience in Single Line Diagram (SLD) drafting, 
+          electrical panel layout design, and basic KNX automation programming. 
+          I am interested in smart building technologies, automation systems, 
+          and applying technical solutions to real-world engineering problems.
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/subash-s-89601b24b/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <br>
+        <div class="btn">
+         <button onclick="location.href='about.html'">About Me</button>
+ <!-- <button class="secondary" onclick="location.href='assets/Subash_S_QA_Resume.pdf'">Download Resume</button>-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 0 });
+  </script>
+  <script src="sample.js"></script>
+</body>
+</html>

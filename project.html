@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Projects | Keerthana D Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Keerthana <span>D</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link active" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="project.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="certifications.html">Certifications</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="contact.html">Contacts</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="project.html">Projects</a>
+                <a href="certifications.html">Certifications</a>
+                <a href="contact.html">Contacts</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- AVBT Internship Projects -->
+<section id="work-experience">
+    <div class="projects-container">
+        <h2 data-aos="fade-up">AVBT Work Experience</h2>
+        <div class="project-cards-wrapper">
+            <div class="project-card" data-aos="fade-right" data-aos-duration="1000">
+                <h3>Electrical CAD Designer & Automation Engineer</h3>
+                <p>I worked on preparing and modifying Single Line Diagrams (SLDs) 
+                    and designing electrical panel layouts for various projects. 
+                    I supported the implementation of automation systems and assisted 
+                    in learning and working with KNX automation programming. 
+                    My responsibilities also included conducting site visits 
+                    to supervise installations and ensure proper execution. 
+                    Additionally, I assisted in the preparation of Bills of Quantities (BOQ) 
+                    and handled project documentation to support the overall workflow 
+                    and project management.</p>
+                <hr>
+                <p><strong>Tools:</strong> AutoCAD, ETS6, Excel</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- College Internship Projects -->
+<section id="internship-projects">
+    <div class="projects-container">
+        <h2 data-aos="fade-up">College Internship</h2>
+        <div class="project-cards-wrapper">
+            <div class="project-card" data-aos="fade-left" data-aos-duration="1400">
+                <h3>TamiraBot Advanced Engineering Pvt. Ltd.</h3>
+                <p><strong>Duration:</strong> 29th May - 28th June 2024</p>
+                <hr>
+                <p><strong>Area of Exposure:</strong> App Development, ML, Predictive Analysis, UI/UX Design</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Academic Projects (Now Below Internship) -->
+<section id="academic-projects">
+    <div class="projects-container">
+        <h2 data-aos="fade-up">Academic Projects</h2>
+        <div class="project-cards-wrapper">
+            <div class="project-card" data-aos="fade-right" data-aos-duration="1000">
+                <h3>Fake Social Media Profile Detection with Blockchain</h3>
+                <p>This project focuses on detecting fake social media profiles 
+                    while improving accuracy using blockchain technology. 
+                    The system analyzes user activity patterns to identify 
+                    suspicious accounts and securely stores verified results 
+                    on a blockchain network to prevent tampering.</p>
+                <hr>
+                <p><strong>Technologies:</strong> Python, Blockchain Concepts, Google Colab, Mobile Application</p>
+                <p><strong>Team Size:</strong> 4</p>
+            </div>
+            <div class="project-card" data-aos="fade-right" data-aos-duration="1200">
+                <h3>Virtual Reality Rehabilitation for Depression and Mobility Challenges</h3>
+                <p>Developed a virtual reality rehabilitation environment to support 
+                    individuals with depression and mobility challenges. 
+                    The immersive experience offers calming, interactive activities 
+                    that aid both emotional and physical recovery.</p>
+                <hr>
+                <p><strong>Technologies & Features:</strong> Blender, Unity & Immersive VR environments, Interactive therapy modules, Relaxation-based rehabilitation approach</p>
+                <p><strong>Team Size:</strong> 3</p>
+            </div>
+            <div class="project-card" data-aos="fade-right" data-aos-duration="1400">
+                <h3>Virtual Reality Autism Rehabilitation for Improving Fine Motor Skills</h3>
+                <p>To improve the fine motor skills and hand eye coordination, 
+                    developed the virtual fish and bowl to have interactive play 
+                    way game for autism children. </p>
+                <hr>
+                <p><strong>Technologies & Features:</strong> Blender, Unity & Interactive VR gameplay, Motor skill training exercises, Child-friendly immersive environment</p>
+                <p><strong>Team Size:</strong> 3</p>
+            </div>
+        </div>
+    </div> 
+</section>
+<!-- ================= QUICK NAV BUTTONS ================= -->
+<section class="quick-nav" data-aos="fade-up">
+    <a href="skills.html" class="quick-btn">← Back to Skills</a>
+    <a href="certifications.html" class="quick-btn">View Certifications →</a>
+</section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 900,         // Trigger animations when scrolling up or down 200px
+        once: true,          // Allows animations to repeat when scrolling up or down
+        easing: 'ease-in-out',
+        anchorPlacement: 'top-bottom' // Ensures animations are triggered when scrolling back up
+      });
+    </script>
+    <script src="sample.js"></script>
+</body>
+</html>
